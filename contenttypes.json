@@ -1,0 +1,210 @@
+[
+    {
+        "id": "author",
+        "displayField": "display_name",
+        "name": "Author",
+        "description": null,
+        "fields": [
+            {
+                "id": "email",
+                "name": "Email",
+                "type": "Symbol",
+                "localized": false,
+                "required": false,
+                "validations": [],
+                "disabled": false,
+                "omitted": false
+            },
+            {
+                "id": "display_name",
+                "name": "Display name",
+                "type": "Symbol",
+                "localized": false,
+                "required": false,
+                "validations": [],
+                "disabled": false,
+                "omitted": false
+            },
+            {
+                "id": "first_name",
+                "name": "First name",
+                "type": "Symbol",
+                "localized": false,
+                "required": false,
+                "validations": [],
+                "disabled": false,
+                "omitted": false
+            },
+            {
+                "id": "last_name",
+                "name": "Last name",
+                "type": "Symbol",
+                "localized": false,
+                "required": false,
+                "validations": [],
+                "disabled": false,
+                "omitted": false
+            },
+            {
+                "id": "slug",
+                "name": "Slug",
+                "type": "Symbol",
+                "localized": false,
+                "required": true,
+                "validations": [],
+                "disabled": false,
+                "omitted": false
+            }, 
+            {
+                "id": "profileImage",
+                "name": "Profile Image",
+                "type": "Link",
+                "localized": false,
+                "required": false,
+                "validations": [
+                  {
+                    "linkMimetypeGroup": [
+                      "image"
+                    ]
+                  }
+                ],
+                "disabled": false,
+                "omitted": false,
+                "linkType": "Asset"
+            },
+            {
+                "id": "introduction",
+                "name": "Introduction",
+                "type": "Text",
+                "localized": false,
+                "required": false,
+                "validations": [],
+                "disabled": false,
+                "omitted": false
+            }
+        ]
+    },
+    {
+        "id": "category",
+        "displayField": "name",
+        "name": "Category",
+        "description": null,
+        "fields": [
+            {
+                "id": "slug",
+                "name": "Slug",
+                "type": "Symbol",
+                "localized": false,
+                "required": false,
+                "validations": [],
+                "disabled": false,
+                "omitted": false
+            },
+            {
+                "id": "name",
+                "name": "Name",
+                "type": "Symbol",
+                "localized": false,
+                "required": false,
+                "validations": [],
+                "disabled": false,
+                "omitted": false
+            }
+        ]
+    },
+    {
+        "id": "post",
+        "displayField": "title",
+        "name": "Post",
+        "description": null,
+        "fields": [
+            {
+                "id": "title",
+                "name": "Title",
+                "type": "Symbol",
+                "localized": false,
+                "required": false,
+                "validations": [],
+                "disabled": false,
+                "omitted": false
+            },
+            {
+                "id": "content",
+                "name": "Content",
+                "type": "Text",
+                "localized": false,
+                "required": false,
+                "validations": [],
+                "disabled": false,
+                "omitted": false
+            },
+            {
+                "id": "author",
+                "name": "Author",
+                "type": "Link",
+                "localized": false,
+                "required": false,
+                "validations": [],
+                "disabled": false,
+                "omitted": false,
+                "linkType": "Entry"
+            },
+            {
+                "id": "categories",
+                "name": "Categories",
+                "type": "Array",
+                "localized": false,
+                "required": false,
+                "validations": [],
+                "disabled": false,
+                "omitted": false,
+                "items": {
+                    "type": "Link",
+                    "validations": [],
+                    "linkType": "Entry"
+                }
+            },
+            {
+                "id": "wordpress_url",
+                "name": "Wordpress_url",
+                "type": "Text",
+                "localized": false,
+                "required": false,
+                "validations": [],
+                "disabled": false,
+                "omitted": false
+            },
+            {
+                "id": "slug",
+                "name": "Slug",
+                "type": "Symbol",
+                "localized": false,
+                "required": false,
+                "validations": [],
+                "disabled": false,
+                "omitted": false
+            },
+            {
+                "id": "attachment",
+                "name": "Attachment",
+                "type": "Link",
+                "localized": false,
+                "required": false,
+                "validations": [],
+                "disabled": false,
+                "omitted": false,
+                "linkType": "Asset"
+            },
+            {
+                "id": "created_at",
+                "name": "Created_at",
+                "type": "Date",
+                "localized": false,
+                "required": false,
+                "validations": [],
+                "disabled": false,
+                "omitted": false
+            }
+        ]
+    }
+]

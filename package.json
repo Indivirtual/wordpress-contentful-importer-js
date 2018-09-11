@@ -1,0 +1,20 @@
+{
+  "name": "wordpresscfimporter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "contentful-management": "^5.1.4",
+    "mime-types": "^2.1.18",
+    "short-uuid": "^3.0.0",
+    "to-markdown": "^3.1.1",
+    "turndown": "^4.0.2",
+    "xml2js": "^0.4.19"
+  }
+}
